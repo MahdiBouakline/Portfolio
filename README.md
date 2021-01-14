@@ -6,7 +6,7 @@ Modules  | Ranking
 ------------- | -------------
 Coding Challenge  | 1
 Introduction to JavaScript  | 2
-Advanced JS:Natural Simulations  | 3
+Advanced JavaScript:Natural Simulations  | 3
 Advanced Games and Vizualtions  | 4
 Computer Science Principles: programming  | 5
 Introduction to HTML/CSS  | 6
