@@ -32,3 +32,15 @@ Algorithms  | 10
   
   
 <h2> 6. Coding Challenge
+  
+  
+<h2> 7. The Internet
+  
+  
+<h2> 8. Digital Information
+  
+  
+<h2> 9. Online Data Security
+  
+  
+<h2> 10. Algorithms
