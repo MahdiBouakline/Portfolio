@@ -1,5 +1,8 @@
 # Mahdi's Portfolio #
 
+### Preview ###
+This is my computer science portfolio. It's a collection of 10 modules that I enjoyed the most, a package of my knowledge and what I learned this quadmester. Almost all my modules are from Khan Academy, as I believe I understood them best. Enjoy!
+
 ## My top 10 list: ##
   
 Modules  | Ranking
