@@ -24,7 +24,7 @@ Algorithms  | 10
 
 <h2> 1. Introduction to JavaScript
   
-  
+  I will continue to use this module as it is what we use to animate. HTML and CSS are wonderful tools when designing a basic website, but JavaScript goes that extra step to turn a decent website into a terrific one. My favourite part of this module was learning to add text and pictures to the screen to truly bring everything together in a satisfying manner, and one that pleases the eye. 
 <h2> 2. Introduction to HTML/CSS
   
   
