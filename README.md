@@ -39,7 +39,7 @@ I will continue to use this module as it is essential to coding basic games and 
  
  
 ## 4. Advanced JS:Natural Simulations ##
-I will continue to use this module as it is essential to coding basic games and entertaining skits. This module helped me learn to create very fun mini-games, such as Tic-Tac-Toe and matching games. In terms of final product, this module was by a landslide my favourite of them all. It made me feel good about myself when I completed the games and saw what I was capable of. My favourite part of this module was learning to use loops and if statements to create those smaller games, and even incorporating characters into them. The challenges and projects were always a new game you could create and play afterwards.  
+I will continue to use this module as it is very commonly used in advanced games. All proper high budget games incorporate real life mechanics, such as physics. This module helped me learn to create advanced natural scenarios and reflect them onto a canvas. It taught me to create rainfall and motions such as bounce. In terms of final product, this module was not the best result, but it's purpose was the final goal. It taught me to take games to that next level and replicate functions in our universe and how to incorporate them. My favourite part of this module was learning to use older and new variables to update the position of every object and the random function to randomize their movement. 
   
   
 ## 5. Computer Science Principles: programming ##
