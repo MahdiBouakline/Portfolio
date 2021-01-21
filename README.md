@@ -30,7 +30,7 @@ I will continue to use this module as it is what we use to animate. HTML and CSS
 <canva>
 
 
-<h1> 2. Introduction to HTML/CSS <\h1>
+## 2. Introduction to HTML/CSS ##
 I will continue to use this module as it is the foundation of website design. Without HTML and CSS none of the effective websites we currently use would be accessible. My favourite part of this module was learning to create a webpage that serces a purpose from scratch. The challenges and projects were often intriguing and random. Coding a travel destination or a recipe was very satisfying when comparing where you started to the end product.
  
  
