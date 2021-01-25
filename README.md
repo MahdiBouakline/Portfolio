@@ -27,8 +27,6 @@ Algorithms  | 10
   
 I will continue to use this module as it is what we use to animate. HTML and CSS are wonderful tools when designing a basic website, but JavaScript goes that extra step to turn a decent website into a terrific one. My favourite part of this module was learning to add text and pictures to the screen to truly bring everything together in a satisfying manner, and one that pleases the eye. 
 
-<canva>
-
 
 ## 2. Introduction to HTML/CSS ##
 I will continue to use this module as it is the foundation of website design. Without HTML and CSS none of the effective websites we currently use would be accessible. My favourite part of this module was learning to create a webpage that serces a purpose from scratch. The challenges and projects were often intriguing and random. Coding a travel destination or a recipe was very satisfying when comparing where you started to the end product.
@@ -59,8 +57,8 @@ I will continue to use this module as it is the most often used in coding. This 
  
   
 ## 9. Online Data Security & Data Analysis & Security ##
-I will continue to use this module as it is essential to coding basic games and entertaining skits. This module helped me learn to create very fun mini-games, such as Tic-Tac-Toe and matching games. In terms of final product, this module was by a landslide my favourite of them all. It made me feel good about myself when I completed the games and saw what I was capable of. My favourite part of this module was learning to use loops and if statements to create those smaller games, and even incorporating characters into them. The challenges and projects were always a new game you could create and play 
+I will continue to use this module as it is taught me how to keep my online information safe, and how it keeps it safe in the first place. This module taught me something we hear about often, but don't really get to see, and that is security. It taught me that many conventional things we do, don't actually keep you safe. Instead, it offered a substitution to that, and other ways to keep our private informaton safe.
 
 
-## 9. Online Data Security & Data Analysis & Security ##
-I will continue to use this module as it is essential to coding basic games and entertaining skits. This module helped me learn to create very fun mini-games, such as Tic-Tac-Toe and matching games. In terms of final product, this module was by a landslide my favourite of them all. It made me feel good about myself when I completed the games and saw what I was capable of. My favourite part of this module was learning to use loops and if statements to create those smaller games, and even incorporating characters into them. The challenges and projects were always a new game you could create and play.
+## 10. TBD ##
+TBD
