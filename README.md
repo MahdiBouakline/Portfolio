@@ -47,7 +47,7 @@ I will continue to use this module as it is essential to understanding programmi
   
   
 ## 6. Coding Challenge ##
-I will continue to use this module as it is essential to coding basic games and entertaining skits. This module helped me learn to create very fun mini-games, such as Tic-Tac-Toe and matching games. In terms of final product, this module was by a landslide my favourite of them all. It made me feel good about myself when I completed the games and saw what I was capable of. My favourite part of this module was learning to use loops and if statements to create those smaller games, and even incorporating characters into them. The challenges and projects were always a new game you could create and play afterwards.  
+This module was one of the more fun ones. I will continue to use the concept of this module, to take a basic code and splice it up. This code taught me to take something small with potential and turn it into a wonder. This project was the most enjoyable project of the course, it offered a small project with a partner, and was enjoyable team work. This project let you combine your ideasa, with that of your partner to create the best final product possible. The best part of this module was struggling to find something to add to it. I spent a long time on a call with jason tryng to figure out what we could change. Overll, this was really the only group project in the course, and it turned out to be very enjoyable.
   
   
 ## 7. Computer Innovation & The Internet ##
