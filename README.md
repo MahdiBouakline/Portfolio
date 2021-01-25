@@ -46,7 +46,10 @@ I will continue to use this module as it is essential to understanding programmi
   
 ## 6. Coding Challenge ##
 This module was one of the more fun ones. I will continue to use the concept of this module, to take a basic code and splice it up. This code taught me to take something small with potential and turn it into a wonder. This project was the most enjoyable project of the course, it offered a small project with a partner, and was enjoyable team work. This project let you combine your ideasa, with that of your partner to create the best final product possible. The best part of this module was struggling to find something to add to it. I spent a long time on a call with jason tryng to figure out what we could change. Overll, this was really the only group project in the course, and it turned out to be very enjoyable.
-  
+  https://github.com/davidklimantovich/2DBlackHolePersonalChange
+
+https://github.com/KaelanKM/Attraction-Repulsion-Refactoring-Kaelan
+
   
 ## 7. Computer Innovation & The Internet ##
 I will continue to use this module as it helps me understand how the internet functions, and connects to our daily life. This module helped me understand the very small details of the usage, creation anf cunction of the internet in our society. It changed how I looked at technology and moern media, I looked at it through a different lense, one that knew how it all worked. My favourite part of this module the computer innovation, as it featured some of the best technology on the planet and explained how we'll use it, and continure to improve it, such as A.I..     
