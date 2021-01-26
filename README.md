@@ -27,8 +27,45 @@ Algorithms  | 10
   
 I will continue to use this module as it is what we use to animate. HTML and CSS are wonderful tools when designing a basic website, but JavaScript goes that extra step to turn a decent website into a terrific one. My favourite part of this module was learning to add text and pictures to the screen to truly bring everything together in a satisfying manner, and one that pleases the eye. 
 
-<canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
+<canvas id="myCanvas" width="600" height="400" style="border:1px solid #000000;">
 </canvas>
+background(186, 145, 20); // wooden table
+ellipse(200, 200, 350, 350); // plate
+ellipse(200, 200, 300, 300); 
+
+fill(135, 24, 24);//sausage
+ellipse(200, 200, 30, 300);
+
+//Colour
+fill(245, 230, 24);
+//Potatoe
+ellipse(150, 100,60, 60); 
+
+//Colour
+stroke(71, 31, 30);
+//cracker
+rect(200, 250,60, 60); 
+
+//Colour
+fill(255, 0, 0);
+//Pepperoni
+ellipse(250, 100,60, 60); 
+
+//Colour
+fill(245, 245, 240);
+//Napkin
+triangle(100, 100,60, 60, 10, 100); 
+
+//Colour
+fill(206, 219, 90);
+//Biscuit
+ellipse(100, 200,90, 90); 
+
+//Colour
+stroke(183, 217, 31);
+//New Dorito flavour
+rect(270, 190,60, 60); 
+
 
 
 ## 2. Introduction to HTML/CSS ##
