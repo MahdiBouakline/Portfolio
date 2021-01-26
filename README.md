@@ -31,7 +31,10 @@ I will continue to use this module as it is what we use to animate. HTML and CSS
 </canvas>
 
 <script>
-  
+
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+
 background(186, 145, 20); // wooden table
 ellipse(200, 200, 350, 350); // plate
 ellipse(200, 200, 300, 300); 
