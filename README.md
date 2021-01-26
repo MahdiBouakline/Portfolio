@@ -29,6 +29,9 @@ I will continue to use this module as it is what we use to animate. HTML and CSS
 
 <canvas id="myCanvas" width="600" height="400" style="border:1px solid #000000;">
 </canvas>
+
+<script>
+  
 background(186, 145, 20); // wooden table
 ellipse(200, 200, 350, 350); // plate
 ellipse(200, 200, 300, 300); 
@@ -65,7 +68,7 @@ ellipse(100, 200,90, 90);
 stroke(183, 217, 31);
 //New Dorito flavour
 rect(270, 190,60, 60); 
-
+</script>
 
 
 ## 2. Introduction to HTML/CSS ##
