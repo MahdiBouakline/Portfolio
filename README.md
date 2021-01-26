@@ -33,16 +33,44 @@ I will continue to use this module as it is what we use to animate. HTML and CSS
 <script>
 var c = document.getElementById("myCanvas");
 var ctx = c.getContext("2d");
+  
+var grd = ctx.ellipse(200, 200, 350, 350); // plate
+ctx.ellipse(200, 200, 300, 300); 
 
-// Create gradient
-var grd = ctx.createRadialGradient(75, 50, 5, 90, 60, 100);
-grd.addColorStop(0, "red");
-grd.addColorStop(1, "white");
+ctx.fill(135, 24, 24);//sausage
+ctx.ellipse(200, 200, 30, 300);
 
-// Fill with gradient
-ctx.fillStyle = grd;
-ctx.fillRect(10, 10, 150, 80);
+//Colour
+ctx.fill(245, 230, 24);
+//Potatoe
+ctx.ellipse(150, 100,60, 60); 
+
+//Colour
+stroke(71, 31, 30);
+//cracker
+ctx.rect(200, 250,60, 60); 
+
+//Colour
+ctx.fill(255, 0, 0);
+//Pepperoni
+ctx.ellipse(250, 100,60, 60); 
+
+//Colour
+ctx.fill(245, 245, 240);
+//Napkin
+ctx.triangle(100, 100,60, 60, 10, 100); 
+
+//Colour
+ctx.fill(206, 219, 90);
+//Biscuit
+ctx.ellipse(100, 200,90, 90); 
+
+//Colour
+ctx.stroke(183, 217, 31);
+//New Dorito flavour
+ctx.rect(270, 190,60, 60); 
 </script>
+
 
 
 ## 2. Introduction to HTML/CSS ##
