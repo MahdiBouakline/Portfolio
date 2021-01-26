@@ -180,42 +180,143 @@ I will continue to use this module as it is essential to coding basic games and 
 <canvas id="myCanvas3" width="600" height="400" style="border:1px solid #000000;">
 </canvas>
 <script>
-background(186, 145, 20); // wooden table
-ellipse(200, 200, 350, 350); // plate
-ellipse(200, 200, 300, 300); 
+//I used the numTries variable from free code camp, the idea to have a counter was from there. Some of the rnadom functions were from fcc
+//Lining up tiles
+var Tile = function(x, y, face) {
+this.x = x;
+this.y = y;
+this.face = face;
+this.width = 70;
 
-fill(135, 24, 24);//sausage
-ellipse(200, 200, 30, 300);
+};
 
-//Colour
-fill(245, 230, 24);
-//Potatoe
-ellipse(150, 100,60, 60); 
+//The tiles while they're face down
+Tile.prototype.drawFaceDown = function() {
+    fill(214, 247, 202);
+strokeWeight(2);
+rect(this.x, this.y, this.width, this.width, 10);
+image(getImage('avatars/leaf-green'), this.x, this.y, this.width, this.width);
+this.isFaceUp = false;
+};
 
-//Colour
-stroke(71, 31, 30);
-//cracker
-rect(200, 250,60, 60); 
+//Outputting rectangle and image
+Tile.prototype.drawFaceUp = function() {
+fill(214, 247, 202);
+strokeWeight(2);
+rect(this.x, this.y, this.width, this.width, 10);
+image(this.face, this.x, this.y, this.width, this.width);
+this.isFaceUp = true;
+};
 
-//Colour
-fill(255, 0, 0);
-//Pepperoni
-ellipse(250, 100,60, 60); 
+Tile.prototype.isUnderMouse = function(x, y) {
+    return x >= this.x && x <= this.x + this.width  &&
+y >= this.y && y <= this.y + this.width;
+};
 
-//Colour
-fill(245, 245, 240);
-//Napkin
-triangle(100, 100,60, 60, 10, 100); 
+var NUM_COLS = 5;
+var NUM_ROWS = 4;
 
-//Colour
-fill(206, 219, 90);
-//Biscuit
-ellipse(100, 200,90, 90); 
+// Declaring an array
 
-//Colour
-stroke(183, 217, 31);
-//New Dorito flavour
-rect(270, 190,60, 60);  
+var faces = [
+getImage('avatars/leafers-seed'),
+getImage('avatars/leafers-seedling'),
+    getImage('avatars/leafers-sapling'),
+getImage('avatars/leafers-tree'),
+getImage('avatars/leafers-ultimate'),
+getImage('avatars/marcimus'),
+    getImage('avatars/mr-pants'),
+getImage('avatars/mr-pink'),
+getImage('avatars/old-spice-man'),
+getImage('avatars/robot_female_1')
+];
+
+// An array with 2 and randomizing it
+
+var possibleFaces = faces.slice(0);
+var selected = [];
+for (var i = 0; i < (NUM_COLS * NUM_ROWS) / 2; i++) {
+
+
+var randomInd = floor(random(possibleFaces.length));
+var face = possibleFaces[randomInd];
+
+selected.push(face);
+selected.push(face);
+
+// Remove from array
+possibleFaces.splice(randomInd, 1);
+}
+
+// Random array
+selected.sort(function() {
+return 0.5 - Math.random();
+});
+
+// Create the tiles
+var tiles = [];
+for (var i = 0; i < NUM_COLS; i++) {
+for (var j = 0; j < NUM_ROWS; j++) {
+tiles.push(new Tile(i * 78 + 10, j * 78 + 40, selected.pop()));
+}
+}
+
+background(255, 255, 255);
+
+// Now flip them
+for (var i = 0; i < tiles.length; i++) {
+tiles[i].drawFaceDown();
+}
+
+var flippedTiles = [];
+var delayStartFC = null;
+var numTries = 0;
+
+//If statements to verify that they do or don't match
+mouseClicked = function() {
+for (var i = 0; i < tiles.length; i++) {
+if (tiles[i].isUnderMouse(mouseX, mouseY)) {
+if (flippedTiles.length < 2 && !tiles[i].isFaceUp) {
+tiles[i].drawFaceUp();
+flippedTiles.push(tiles[i]);
+if (flippedTiles.length === 2) {
+numTries++;
+if (flippedTiles[0].face === flippedTiles[1].face) {
+flippedTiles[0].isMatch = true;
+flippedTiles[1].isMatch = true;
+}
+delayStartFC = frameCount;
+loop();
+}
+}
+}
+}
+//Outputting message if they are all found with the amount of tries declared with a variable called numTries
+var
+foundAllMatches = true;
+for (var i = 0; i < tiles.length; i++) {
+foundAllMatches = foundAllMatches && tiles[i].isMatch;
+}
+if (foundAllMatches) {
+fill(0, 0, 0);
+textSize(20);
+text('It took you ' + numTries + ' tries!', 20, 375);
+}
+};
+
+//Ending loop if there's no more unflipped tiles left
+draw = function() {
+if (delayStartFC && (frameCount - delayStartFC) > 30) {
+for (var i = 0; i < tiles.length; i++) {
+if (!tiles[i].isMatch) {
+tiles[i].drawFaceDown();
+}
+}
+flippedTiles = [];
+delayStartFC = null;
+noLoop();
+}
+};  
 </script>
 
  
@@ -224,87 +325,226 @@ I will continue to use this module as it is very commonly used in advanced games
 <canvas id="myCanvas4" width="600" height="400" style="border:1px solid #000000;">
 </canvas>
 <script>
-background(186, 145, 20); // wooden table
-ellipse(200, 200, 350, 350); // plate
-ellipse(200, 200, 300, 300); 
+//Used modules from free code camp
+//radians instead of degrees as instructed by free code camp
+angleMode = "radians";
 
-fill(135, 24, 24);//sausage
-ellipse(200, 200, 30, 300);
+//defining the properties of the flower
+var Flower = function(){
+    this.position = new PVector(width/2, height-100);
+    this.mass = 40;
+};
 
-//Colour
-fill(245, 230, 24);
-//Potatoe
-ellipse(150, 100,60, 60); 
+//displaying the Flower
+Flower.prototype.display = function(){
+    //four pedals
+    fill(225, 255, 0);
+    ellipse(this.position.x+13, this.position.y-89, 16, 16);
+    ellipse(this.position.x, this.position.y-102, 16, 16);
+    ellipse(this.position.x, this.position.y-76, 16, 16);
+    ellipse(this.position.x-10, this.position.y-89, 16, 16);
+    //center of flower
+    fill(8, 8, 8);
+    ellipse(this.position.x, this.position.y-89, 10, 10);
+    //flower stem
+    stroke(9, 235, 62);
+    strokeWeight(4);
+    line(this.position.x, this.position.y+100, this.position.x, this.position.y-65);
+};
 
-//Colour
-stroke(71, 31, 30);
-//cracker
-rect(200, 250,60, 60); 
+//defining particles
+var Particle = function(position){
+    this.acceleration = new PVector(0, 0.05);
+    this.velocity = new PVector(random(-1, 1), random(-1, 0));
+    this.position = position.get();
+    this.timeToLive = 250;
+};
+Particle.prototype.run = function() {
+    this.update();
+    this.display();
+};
 
-//Colour
-fill(255, 0, 0);
-//Pepperoni
-ellipse(250, 100,60, 60); 
+//changing velocity and acceleration
+Particle.prototype.update = function(){
+    this.velocity.add(this.acceleration);
+    this.position.add(this.velocity);
+    //decreasing time to live by 2 so that it disappears around the time it reaches the ground
+    this.lifeT -= 2;
+};
 
-//Colour
-fill(245, 245, 240);
-//Napkin
-triangle(100, 100,60, 60, 10, 100); 
+//displaying particles
+Particle.prototype.display = function() {
+    noStroke();
+    fill(156, 237, 255, this.timeToLive);
+    ellipse(this.position.x, this.position.y, 12, 12);
+};
 
-//Colour
-fill(206, 219, 90);
-//Biscuit
-ellipse(100, 200,90, 90); 
+//determining if particle is dead 
+Particle.prototype.isDead = function() {
+    if (this.timeToLive < 0) {
+        return true;
+    } else {
+        return false;
+    }
+};
+var Water = function(position){
+    Particle.call(this, position);
+};
+Water.prototype = Object.create(Particle.prototype);
+Water.constructor = Water;
 
-//Colour
-stroke(183, 217, 31);
-//New Dorito flavour
-rect(270, 190,60, 60);  
+//Rainfall
+Water.prototype.display = function(){
+    noStroke();
+    fill(5, 26, 255);
+    ellipse(this.position.x, this.position.y, 5, 5);
+};
+
+var ParticleSystem = function(position) {
+    this.origin = position.get();
+    this.particles = [];
+};
+
+//adding new particles
+ParticleSystem.prototype.addParticle = function() {
+    //always adding water praticles
+    this.particles.push(new Water(this.origin));
+};
+ParticleSystem.prototype.run = function() {
+    for (var i = this.particles.length-1; i >= 0; i--) {
+            for (var i = this.particles.length-1; i >= 0; i--)    {
+            var p = this.particles[i];
+            p.run();
+            //removing dead particles
+            if (p.isDead()) {
+                this.particles.splice(i, 1);
+            }
+        }
+  }
+        
+};
+
+//creating array of particleSystem
+var particleSystem  = [];
+//variable for the x value of the particle origin
+var w = 25;
+//adding new particle systems to the array
+for (var i = 0; i < 4; i++){
+        particleSystem.push(new ParticleSystem (new PVector(w, 0)));
+        //increasing x value of origin
+        w = w+100;
+    }
+
+//insect properties
+var insect = function() {
+    this.a = 0;
+    this.angVelocity = 0;
+    this.angle = new PVector();
+    this.velocity = new PVector(random(-0.05, 0.05), random(-0.05, 0.05));
+    this.amplitude = new PVector(random(20, width/2), random(20, width/2));
+    this.position = new PVector(0, 0);
+};
+
+//oscillating the insects
+insect.prototype.oscillate = function() {
+    this.angle.add(this.velocity);
+    this.position.set(
+                sin(this.angle.x) * this.amplitude.x,
+                sin(this.angle.y) * this.amplitude.y);
+    var distance = this.position.mag();
+    this.angVelocity += distance / 1000000;
+    this.angVelocity = constrain(this.angVelocity, 0, 0.1);
+    this.a += this.angVelocity;
+};
+
+//displaying the insects
+insect.prototype.display = function() {
+    pushMatrix();
+    translate(width/2, height/2);
+    stroke(20, 1, 1);
+    strokeWeight(4);
+    imageMode(CENTER);
+    translate(this.position.x, this.position.y);
+    rotate(this.a);
+    //bee
+    stroke(0, 0, 0);
+    strokeWeight(2);
+    fill(0, 0, 0);
+    //head
+    ellipse(-28, 0, 20, 20);
+    fill(255, 255, 0);
+    //body
+    ellipse(0, 0, 48, 48);
+    fill(0, 0, 0);
+    popMatrix();
+};
+
+//new flower variable 
+var flower = new Flower();
+
+//declaring array for new insects
+var bug = [];
+//randomizing insects
+for (var i = 0; i < 2; i++) {
+    bug[i] = new insect(random(0.1, 2), random(width), random(height));
+}
+
+draw = function() {
+    
+   //sky
+   background(56, 62, 64);
+    
+   //looping through array of particle systems 
+   for (var i = 0; i < particleSystem.length; i++){
+        particleSystem[i].addParticle();
+        particleSystem[i].run();
+        
+   }
+    
+   //sun 
+   fill(255, 247, 0);
+    ellipse(279, 18, 158, 100);
+    
+   //clouds
+    fill(87, 82, 82);
+    noStroke();
+    ellipse(66, 18, 158, 137);
+    ellipse(181, 18, 100, 107);
+    ellipse(351, 18, 158, 120);
+
+   //dying tree
+    fill(41, 29, 2);
+    rect(0, 340, 150, 50);
+    //grass
+    fill(32, 74, 0);
+    rect(0, 370, 400, 100);
+    
+   //dead bee
+    stroke(0, 0, 0);
+    strokeWeight(2);
+    fill(0, 0, 0);
+    //head
+    ellipse(350, 380, 20, 20);
+    fill(255, 255, 0);
+    //body
+    ellipse(380, 380, 48, 48);
+    fill(0, 0, 0);
+    
+   //looping through all the bugs and displaying and oscillating them
+    for (var i = 0; i < bug.length; i++){
+        bug[i].display();
+        bug[i].oscillate();
+    }
+    
+   //displaying flower
+    flower.display();
+};
+
 </script>
 
   
 ## 5. Computer Science Principles: programming ##
 I will continue to use this module as it is essential to understanding programming and everything surrounding the subject. This module helped me understand the basics of coding, and how to use functions and more basic principles. It taught me what certain functions were used for. In terms of final product, this module didn't really have a physical one, but rather simply taught you it. The final goal was to teach the basics of coding and it fulfilled it successfully. It helped prepare me for what was to come. My favourite part of the module was taking the final tests at the end, and competing them to the quizzes at the beginning, it helped me realize how far I'd actually gotten and how much more I had to learn.   
-<canvas id="myCanvas5" width="600" height="400" style="border:1px solid #000000;">
-</canvas>
-<script>
-background(186, 145, 20); // wooden table
-ellipse(200, 200, 350, 350); // plate
-ellipse(200, 200, 300, 300); 
-
-fill(135, 24, 24);//sausage
-ellipse(200, 200, 30, 300);
-
-//Colour
-fill(245, 230, 24);
-//Potatoe
-ellipse(150, 100,60, 60); 
-
-//Colour
-stroke(71, 31, 30);
-//cracker
-rect(200, 250,60, 60); 
-
-//Colour
-fill(255, 0, 0);
-//Pepperoni
-ellipse(250, 100,60, 60); 
-
-//Colour
-fill(245, 245, 240);
-//Napkin
-triangle(100, 100,60, 60, 10, 100); 
-
-//Colour
-fill(206, 219, 90);
-//Biscuit
-ellipse(100, 200,90, 90); 
-
-//Colour
-stroke(183, 217, 31);
-//New Dorito flavour
-rect(270, 190,60, 60);  
-</script>
 
   
 ## 6. Coding Challenge ##
@@ -312,219 +552,23 @@ This module was one of the more fun ones. I will continue to use the concept of 
   https://github.com/davidklimantovich/2DBlackHolePersonalChange
 
 https://github.com/KaelanKM/Attraction-Repulsion-Refactoring-Kaelan
-<canvas id="myCanvas6" width="600" height="400" style="border:1px solid #000000;">
-</canvas>
-<script>
-background(186, 145, 20); // wooden table
-ellipse(200, 200, 350, 350); // plate
-ellipse(200, 200, 300, 300); 
 
-fill(135, 24, 24);//sausage
-ellipse(200, 200, 30, 300);
-
-//Colour
-fill(245, 230, 24);
-//Potatoe
-ellipse(150, 100,60, 60); 
-
-//Colour
-stroke(71, 31, 30);
-//cracker
-rect(200, 250,60, 60); 
-
-//Colour
-fill(255, 0, 0);
-//Pepperoni
-ellipse(250, 100,60, 60); 
-
-//Colour
-fill(245, 245, 240);
-//Napkin
-triangle(100, 100,60, 60, 10, 100); 
-
-//Colour
-fill(206, 219, 90);
-//Biscuit
-ellipse(100, 200,90, 90); 
-
-//Colour
-stroke(183, 217, 31);
-//New Dorito flavour
-rect(270, 190,60, 60);  
-</script>
 
   
 ## 7. Computer Innovation & The Internet ##
 I will continue to use this module as it helps me understand how the internet functions, and connects to our daily life. This module helped me understand the very small details of the usage, creation anf cunction of the internet in our society. It changed how I looked at technology and moern media, I looked at it through a different lense, one that knew how it all worked. My favourite part of this module the computer innovation, as it featured some of the best technology on the planet and explained how we'll use it, and continure to improve it, such as A.I..     
-<canvas id="myCanvas7" width="600" height="400" style="border:1px solid #000000;">
-</canvas>
-<script>
-background(186, 145, 20); // wooden table
-ellipse(200, 200, 350, 350); // plate
-ellipse(200, 200, 300, 300); 
 
-fill(135, 24, 24);//sausage
-ellipse(200, 200, 30, 300);
-
-//Colour
-fill(245, 230, 24);
-//Potatoe
-ellipse(150, 100,60, 60); 
-
-//Colour
-stroke(71, 31, 30);
-//cracker
-rect(200, 250,60, 60); 
-
-//Colour
-fill(255, 0, 0);
-//Pepperoni
-ellipse(250, 100,60, 60); 
-
-//Colour
-fill(245, 245, 240);
-//Napkin
-triangle(100, 100,60, 60, 10, 100); 
-
-//Colour
-fill(206, 219, 90);
-//Biscuit
-ellipse(100, 200,90, 90); 
-
-//Colour
-stroke(183, 217, 31);
-//New Dorito flavour
-rect(270, 190,60, 60);  
-</script>
 
 
 ## 8. Digital Information & Algorithms ##
 I will continue to use this module as it is the most often used in coding. This module helped me understand the true meaning of Algorithms, and how coding works to create the final product. It wen very in depth into what the code does when it is typed in, and how it works to produce a stunning final outcome. My favourite part of this module was learning bites aspect, it was something I'd never seen or been taught before, and it was crazy to understand how all these things came together. The content was a bit hard to understand at first, but when it sunk in, I realized what it meant and how it all worked.   
-<canvas id="myCanvas8" width="600" height="400" style="border:1px solid #000000;">
-</canvas>
-<script>
-background(186, 145, 20); // wooden table
-ellipse(200, 200, 350, 350); // plate
-ellipse(200, 200, 300, 300); 
 
-fill(135, 24, 24);//sausage
-ellipse(200, 200, 30, 300);
-
-//Colour
-fill(245, 230, 24);
-//Potatoe
-ellipse(150, 100,60, 60); 
-
-//Colour
-stroke(71, 31, 30);
-//cracker
-rect(200, 250,60, 60); 
-
-//Colour
-fill(255, 0, 0);
-//Pepperoni
-ellipse(250, 100,60, 60); 
-
-//Colour
-fill(245, 245, 240);
-//Napkin
-triangle(100, 100,60, 60, 10, 100); 
-
-//Colour
-fill(206, 219, 90);
-//Biscuit
-ellipse(100, 200,90, 90); 
-
-//Colour
-stroke(183, 217, 31);
-//New Dorito flavour
-rect(270, 190,60, 60);  
-</script>
 
   
 ## 9. Online Data Security & Data Analysis & Security ##
 I will continue to use this module as it is taught me how to keep my online information safe, and how it keeps it safe in the first place. This module taught me something we hear about often, but don't really get to see, and that is security. It taught me that many conventional things we do, don't actually keep you safe. Instead, it offered a substitution to that, and other ways to keep our private informaton safe.
-<canvas id="myCanvas9" width="600" height="400" style="border:1px solid #000000;">
-</canvas>
-<script>
-background(186, 145, 20); // wooden table
-ellipse(200, 200, 350, 350); // plate
-ellipse(200, 200, 300, 300); 
 
-fill(135, 24, 24);//sausage
-ellipse(200, 200, 30, 300);
-
-//Colour
-fill(245, 230, 24);
-//Potatoe
-ellipse(150, 100,60, 60); 
-
-//Colour
-stroke(71, 31, 30);
-//cracker
-rect(200, 250,60, 60); 
-
-//Colour
-fill(255, 0, 0);
-//Pepperoni
-ellipse(250, 100,60, 60); 
-
-//Colour
-fill(245, 245, 240);
-//Napkin
-triangle(100, 100,60, 60, 10, 100); 
-
-//Colour
-fill(206, 219, 90);
-//Biscuit
-ellipse(100, 200,90, 90); 
-
-//Colour
-stroke(183, 217, 31);
-//New Dorito flavour
-rect(270, 190,60, 60);  
-</script>
 
 
 ## 10. TBD ##
 TBD
-<canvas id="myCanvas10" width="600" height="400" style="border:1px solid #000000;">
-</canvas>
-<script>
-background(186, 145, 20); // wooden table
-ellipse(200, 200, 350, 350); // plate
-ellipse(200, 200, 300, 300); 
-
-fill(135, 24, 24);//sausage
-ellipse(200, 200, 30, 300);
-
-//Colour
-fill(245, 230, 24);
-//Potatoe
-ellipse(150, 100,60, 60); 
-
-//Colour
-stroke(71, 31, 30);
-//cracker
-rect(200, 250,60, 60); 
-
-//Colour
-fill(255, 0, 0);
-//Pepperoni
-ellipse(250, 100,60, 60); 
-
-//Colour
-fill(245, 245, 240);
-//Napkin
-triangle(100, 100,60, 60, 10, 100); 
-
-//Colour
-fill(206, 219, 90);
-//Biscuit
-ellipse(100, 200,90, 90); 
-
-//Colour
-stroke(183, 217, 31);
-//New Dorito flavour
-rect(270, 190,60, 60);  
-</script>
