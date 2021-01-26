@@ -31,44 +31,42 @@ I will continue to use this module as it is what we use to animate. HTML and CSS
 </canvas>
 
 <script>
-var c = document.getElementById("myCanvas");
-var ctx = c.getContext("2d");
-  
-var grd = ctx.ellipse(200, 200, 350, 350); // plate
-ctx.ellipse(200, 200, 300, 300); 
+background(186, 145, 20); // wooden table
+ellipse(200, 200, 350, 350); // plate
+ellipse(200, 200, 300, 300); 
 
-ctx.fill(135, 24, 24);//sausage
-ctx.ellipse(200, 200, 30, 300);
+fill(135, 24, 24);//sausage
+ellipse(200, 200, 30, 300);
 
 //Colour
-ctx.fill(245, 230, 24);
+fill(245, 230, 24);
 //Potatoe
-ctx.ellipse(150, 100,60, 60); 
+ellipse(150, 100,60, 60); 
 
 //Colour
 stroke(71, 31, 30);
 //cracker
-ctx.rect(200, 250,60, 60); 
+rect(200, 250,60, 60); 
 
 //Colour
-ctx.fill(255, 0, 0);
+fill(255, 0, 0);
 //Pepperoni
-ctx.ellipse(250, 100,60, 60); 
+ellipse(250, 100,60, 60); 
 
 //Colour
-ctx.fill(245, 245, 240);
+fill(245, 245, 240);
 //Napkin
-ctx.triangle(100, 100,60, 60, 10, 100); 
+triangle(100, 100,60, 60, 10, 100); 
 
 //Colour
-ctx.fill(206, 219, 90);
+fill(206, 219, 90);
 //Biscuit
-ctx.ellipse(100, 200,90, 90); 
+ellipse(100, 200,90, 90); 
 
 //Colour
-ctx.stroke(183, 217, 31);
+stroke(183, 217, 31);
 //New Dorito flavour
-ctx.rect(270, 190,60, 60); 
+rect(270, 190,60, 60);  
 </script>
 
 
