@@ -27,6 +27,9 @@ Algorithms  | 10
   
 I will continue to use this module as it is what we use to animate. HTML and CSS are wonderful tools when designing a basic website, but JavaScript goes that extra step to turn a decent website into a terrific one. My favourite part of this module was learning to add text and pictures to the screen to truly bring everything together in a satisfying manner, and one that pleases the eye. 
 
+<canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
+</canvas>
+
 
 ## 2. Introduction to HTML/CSS ##
 I will continue to use this module as it is the foundation of website design. Without HTML and CSS none of the effective websites we currently use would be accessible. My favourite part of this module was learning to create a webpage that serces a purpose from scratch. The challenges and projects were often intriguing and random. Coding a travel destination or a recipe was very satisfying when comparing where you started to the end product.
