@@ -12,11 +12,12 @@ This is my computer science portfolio. It's a collection of 10 modules that I en
   
 Modules  | Ranking
 ------------- | -------------
+JavaScript  |   <img id="JS" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/480px-JavaScript-logo.png">
 Coding Challenge  | 1
 Introduction to JavaScript  | 2
 Advanced JavaScript:Natural Simulations  | 3
 Advanced Games and Vizualtions  | 4
-Computer Science Principles: programming  | 5         <img id="JS" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/480px-JavaScript-logo.png">
+Computer Science Principles: programming  | 5        
 Introduction to HTML/CSS  | 6
 The Internet  | 7
 Digital Information  | 8
