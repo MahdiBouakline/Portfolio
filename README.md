@@ -29,7 +29,9 @@ Algorithms  | 10
 I will continue to use this module as it is what we use to animate. HTML and CSS are wonderful tools when designing a basic website, but JavaScript goes that extra step to turn a decent website into a terrific one. My favourite part of this module was learning to add text and pictures to the screen to truly bring everything together in a satisfying manner, and one that pleases the eye. 
 
 <canvas id="myCanvas" width="600" height="400" style="border:1px solid #000000;">
-  <script>
+</canvas>
+
+<script>
 
 function(draw)
 {
@@ -62,8 +64,6 @@ ctx.rect(270, 190,60, 60);
 }
 setInterval()
 </script>
-</canvas>
-
 
 
 ## 2. Introduction to HTML/CSS ##
