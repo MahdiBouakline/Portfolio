@@ -66,6 +66,7 @@ ellipse(100, 200,90, 90);
 stroke(183, 217, 31);
 //New Dorito flavour
 rect(270, 190,60, 60);  
+setInterval()
 </script>
 </canvas>
 
