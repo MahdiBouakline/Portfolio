@@ -29,6 +29,7 @@ Algorithms  | 10
 I will continue to use this module as it is what we use to animate. HTML and CSS are wonderful tools when designing a basic website, but JavaScript goes that extra step to turn a decent website into a terrific one. My favourite part of this module was learning to add text and pictures to the screen to truly bring everything together in a satisfying manner, and one that pleases the eye. 
 
 <a href="https://www.khanacademy.org/computer-programming/spin-off-of-project-whats-for-dinner/5779760197877760">Visit my Dinner project!</a>
+<a href="https://editor.p5js.org/mahdibouakline/sketches/uFUWPNaV4">Or on P5!</a>
 
 
 
