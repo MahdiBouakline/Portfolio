@@ -30,42 +30,36 @@ I will continue to use this module as it is what we use to animate. HTML and CSS
 
 <canvas id="myCanvas" width="600" height="400" style="border:1px solid #000000;">
   <script>
-background(186, 145, 20); // wooden table
-ellipse(200, 200, 350, 350); // plate
-ellipse(200, 200, 300, 300); 
 
-fill(135, 24, 24);//sausage
-ellipse(200, 200, 30, 300);
+function(draw)
+{
+var ctx = document.getElementById('canvas').getContext('2d');
 
-//Colour
-fill(245, 230, 24);
-//Potatoe
-ellipse(150, 100,60, 60); 
+ctx.background(186, 145, 20); // wooden table
+ctx.ellipse(200, 200, 350, 350); // plate
+ctx.ellipse(200, 200, 300, 300); 
 
-//Colour
-stroke(71, 31, 30);
-//cracker
-rect(200, 250,60, 60); 
+ctx.fill(135, 24, 24);//sausage
+ctx.ellipse(200, 200, 30, 300);
 
-//Colour
-fill(255, 0, 0);
-//Pepperoni
-ellipse(250, 100,60, 60); 
+ctx.fill(245, 230, 24);
+ctx.ellipse(150, 100,60, 60); 
 
-//Colour
-fill(245, 245, 240);
-//Napkin
-triangle(100, 100,60, 60, 10, 100); 
+ctx.stroke(71, 31, 30);
+ctx.rect(200, 250,60, 60); 
 
-//Colour
-fill(206, 219, 90);
-//Biscuit
-ellipse(100, 200,90, 90); 
+ctx.fill(255, 0, 0);
+ctx.ellipse(250, 100,60, 60); 
 
-//Colour
-stroke(183, 217, 31);
-//New Dorito flavour
-rect(270, 190,60, 60);  
+ctx.fill(245, 245, 240);
+ctx.triangle(100, 100,60, 60, 10, 100); 
+
+ctx.fill(206, 219, 90);
+ctx.ellipse(100, 200,90, 90); 
+
+ctx.stroke(183, 217, 31);
+ctx.rect(270, 190,60, 60); 
+}
 setInterval()
 </script>
 </canvas>
