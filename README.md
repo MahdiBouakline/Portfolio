@@ -66,7 +66,7 @@ I will continue to use this module as it is essential to understanding programmi
   
 ## 6. Coding Challenge ##
 This module was one of the more fun ones. I will continue to use the concept of this module, to take a basic code and splice it up. This code taught me to take something small with potential and turn it into a wonder. This project was the most enjoyable project of the course, it offered a small project with a partner, and was enjoyable team work. This project let you combine your ideasa, with that of your partner to create the best final product possible. The best part of this module was struggling to find something to add to it. I spent a long time on a call with jason tryng to figure out what we could change. Overll, this was really the only group project in the course, and it turned out to be very enjoyable.
-<a href="https://editor.p5js.org/mahdibouakline/present/eT0KA3LeI">Visit my Coding Challenge!</a>
+<a href="https://editor.p5js.org/mahdibouakline/full/eT0KA3LeI">Visit my Coding Challenge!</a>
 <a href="https://editor.p5js.org/mahdibouakline/present/l1yxTPK__">Visit my edit on David's Coding Challenge!</a>
 <a href="https://editor.p5js.org/mahdibouakline/full/AfnDACU90">Visit my edit on Kaelan's Coding Challenge!</a>
 
@@ -96,5 +96,12 @@ I will continue to use this module as it is taught me how to keep my online info
 <img id="Security" src="https://thumbor.forbes.com/thumbor/300x0/https%3A%2F%2Fblogs-images.forbes.com%2Fnextavenue%2Ffiles%2F2013%2F01%2F7_steps_to_protect_your_online_security_148650499-300x168.jpg">
 
 
+
 ## 10. Algorithms Exploration ##
 The final module I have to offer for today is the Algorithms exploration module. This module was essentially consistently soling a Rubik's cube. I enjoyed this module because it was something original that I haden't seen in other courses. This was something new and it was very fun. Playing around with the cube and trying to solve it was one of the highlights of the course. I will continue to use this module as it is an interesting concept and cubing is very fascinating mathematically. This module gave me the opportunity to use something that's glanced over by the education system. It taught me what an asset these puzzles are, and howeffeective they are at getting you to analyze and breadown the cube.
+
+<img id="Cube" src="https://i.pinimg.com/originals/97/5f/49/975f495fafd8c494591892412ecf87e3.jpg">
+
+
+
+## Conclusion ##
