@@ -37,7 +37,7 @@ I will continue to use this module as it is what we use to animate. HTML and CSS
 I will continue to use this module as it is the foundation of website design. Without HTML and CSS none of the effective websites we currently use would be accessible. My favourite part of this module was learning to create a webpage that serces a purpose from scratch. The challenges and projects were often intriguing and random. Coding a travel destination or a recipe was very satisfying when comparing where you started to the end product.
 <a href="https://www.khanacademy.org/computer-programming/spin-off-of-project-event-invite/5606811827126272">Visit my Invitation project!</a>
 
-<img id="HTML" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png">
+<img id="HTML" src="https://p.kindpng.com/picc/s/23-237381_java-html-language-logo-png-transparent-png.png">
  
  
  
