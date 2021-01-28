@@ -72,6 +72,7 @@ This module was one of the more fun ones. I will continue to use the concept of 
 https://github.com/KaelanKM/Attraction-Repulsion-Refactoring-Kaelan
 
 <img id="CodeC" src="https://i.ytimg.com/vi/17WoOqgXsRM/sddefault.jpg">
+
 And here's a sneak peek at jason and I's project!
 
 
@@ -79,16 +80,21 @@ And here's a sneak peek at jason and I's project!
 ## 7. Computer Innovation & The Internet ##
 I will continue to use this module as it helps me understand how the internet functions, and connects to our daily life. This module helped me understand the very small details of the usage, creation anf cunction of the internet in our society. It changed how I looked at technology and moern media, I looked at it through a different lense, one that knew how it all worked. My favourite part of this module the computer innovation, as it featured some of the best technology on the planet and explained how we'll use it, and continure to improve it, such as A.I..     
 
+<img id="Internet" src="https://static.vecteezy.com/system/resources/previews/000/543/715/non_2x/vector-futuristic-blue-earth-with-wifi-internet-abstract-technology-background-artificial-intelligence-digital-transformation-and-big-data-concept-business-quantum-internet-network-communication-concept.jpg">
+
 
 
 ## 8. Digital Information & Algorithms ##
 I will continue to use this module as it is the most often used in coding. This module helped me understand the true meaning of Algorithms, and how coding works to create the final product. It wen very in depth into what the code does when it is typed in, and how it works to produce a stunning final outcome. My favourite part of this module was learning bites aspect, it was something I'd never seen or been taught before, and it was crazy to understand how all these things came together. The content was a bit hard to understand at first, but when it sunk in, I realized what it meant and how it all worked.   
+
+<img id="Algorithms" src="https://machinelearningknowledge.ai/wp-content/uploads/2019/12/what-is-an-algorithm-featured.png">
 
 
   
 ## 9. Online Data Security & Data Analysis & Security ##
 I will continue to use this module as it is taught me how to keep my online information safe, and how it keeps it safe in the first place. This module taught me something we hear about often, but don't really get to see, and that is security. It taught me that many conventional things we do, don't actually keep you safe. Instead, it offered a substitution to that, and other ways to keep our private informaton safe.
 
+<img id="Security" src="https://thumbor.forbes.com/thumbor/300x0/https%3A%2F%2Fblogs-images.forbes.com%2Fnextavenue%2Ffiles%2F2013%2F01%2F7_steps_to_protect_your_online_security_148650499-300x168.jpg">
 
 
 ## 10. TBD ##
