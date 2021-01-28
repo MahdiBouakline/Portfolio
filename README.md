@@ -19,9 +19,9 @@ Advanced Games and Vizualtions  | 4
 Computer Science Principles: programming  | 5        
 Introduction to HTML/CSS  | 6
 The Internet  | 7
-Digital Information  | 8
+Digital Information & Algorithms | 8
 Online Data Security  | 9
-Algorithms  | 10
+Algorithm Explortion | 10
 
 ## 1. Introduction to JavaScript ##
   
@@ -97,5 +97,5 @@ I will continue to use this module as it is taught me how to keep my online info
 <img id="Security" src="https://thumbor.forbes.com/thumbor/300x0/https%3A%2F%2Fblogs-images.forbes.com%2Fnextavenue%2Ffiles%2F2013%2F01%2F7_steps_to_protect_your_online_security_148650499-300x168.jpg">
 
 
-## 10. TBD ##
-TBD
+## 10. Algorithms Exploration ##
+The final module I have to offer for today is the Algorithms exploration module. This module was essentially consistently soling a Rubik's cube. I enjoyed this module because it was something original that I haden't seen in other courses. This was something new and it was very fun. Playing around with the cube and trying to solve it was one of the highlights of the course.
