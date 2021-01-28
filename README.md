@@ -105,3 +105,4 @@ The final module I have to offer for today is the Algorithms exploration module.
 
 
 ## Conclusion ##
+In conclusion, this portfolio is a display of everything that I have learned during this course. I'm going to use this portion to give feedback on the course. For starters, I'd like to thank you for teaching this course effectively, even with all the obstacles we've had to face during the year. I highly recommend you continue to use Khan Academy. This is my first year using it, and I learned more than aall previous computer science courses combined. Thank you for a wonderful quadmester and I wish you luck in the future.
