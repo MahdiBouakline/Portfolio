@@ -55,7 +55,7 @@ I will continue to use this module as it is very commonly used in advanced games
 
 <a href="https://www.khanacademy.org/computer-programming/spin-off-of-project-creature-colonies/5214854252544000">Visit my Natural Simulations project!</a>
 
-<img id="Khan" src="https://yt3.ggpht.com/ytc/AAUvwnjF6UpcpHjyNXjjbZmCjFJLrTZyttiXr4vr7m8S=s900-c-k-c0x00ffffff-no-rj">
+<img id="Khan" src="https://pbs.twimg.com/profile_images/1122934185570852865/leT97MR8.png">
 
  
 
