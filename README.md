@@ -62,12 +62,17 @@ I will continue to use this module as it is very commonly used in advanced games
 ## 5. Computer Science Principles: programming ##
 I will continue to use this module as it is essential to understanding programming and everything surrounding the subject. This module helped me understand the basics of coding, and how to use functions and more basic principles. It taught me what certain functions were used for. In terms of final product, this module didn't really have a physical one, but rather simply taught you it. The final goal was to teach the basics of coding and it fulfilled it successfully. It helped prepare me for what was to come. My favourite part of the module was taking the final tests at the end, and competing them to the quizzes at the beginning, it helped me realize how far I'd actually gotten and how much more I had to learn.   
 
+<img id="CPG" src="https://cdn.kastatic.org/googleusercontent/Ig6dNEHRxsJZjWcXhvDIPovdQSV43z0Ws1kggbUXGR19XOA7b8yZgyIyz3O8Bx72BFmMUD4S6uupdPhv2ToeMRc">
+
+
   
 ## 6. Coding Challenge ##
 This module was one of the more fun ones. I will continue to use the concept of this module, to take a basic code and splice it up. This code taught me to take something small with potential and turn it into a wonder. This project was the most enjoyable project of the course, it offered a small project with a partner, and was enjoyable team work. This project let you combine your ideasa, with that of your partner to create the best final product possible. The best part of this module was struggling to find something to add to it. I spent a long time on a call with jason tryng to figure out what we could change. Overll, this was really the only group project in the course, and it turned out to be very enjoyable.
-<a href="https://editor.p5js.org/mahdibouakline/sketches/l1yxTPK__">Visit my Coding Challenge 1!</a>
-
+<a href="https://editor.p5js.org/mahdibouakline/sketches/l1yxTPK__">Visit my edit on David's Coding Challenge 1!</a>
 https://github.com/KaelanKM/Attraction-Repulsion-Refactoring-Kaelan
+
+<img id="CodeC" src="https://i.ytimg.com/vi/17WoOqgXsRM/sddefault.jpg">
+And here's a sneak peek at jason and I's project!
 
 
   
