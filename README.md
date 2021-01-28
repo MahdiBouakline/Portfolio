@@ -27,7 +27,7 @@ Algorithm Explortion | 10
   
 I will continue to use this module as it is what we use to animate. HTML and CSS are wonderful tools when designing a basic website, but JavaScript goes that extra step to turn a decent website into a terrific one. My favourite part of this module was learning to add text and pictures to the screen to truly bring everything together in a satisfying manner, and one that pleases the eye. 
 <a href="https://www.khanacademy.org/computer-programming/spin-off-of-project-whats-for-dinner/5779760197877760">Visit my Dinner project!</a>
-<a href="https://editor.p5js.org/mahdibouakline/sketches/uFUWPNaV4">Or on P5!</a>
+<a href="https://editor.p5js.org/mahdibouakline/present/AfnDACU90">Or on P5!</a>
 
 <img id="JS" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/480px-JavaScript-logo.png">
 
@@ -43,16 +43,13 @@ I will continue to use this module as it is the foundation of website design. Wi
  
 ## 3. Advanced Games and Vizualtions ##
 I will continue to use this module as it is essential to coding basic games and entertaining skits. This module helped me learn to create very fun mini-games, such as Tic-Tac-Toe and matching games. In terms of final product, this module was by a landslide my favourite of them all. It made me feel good about myself when I completed the games and saw what I was capable of. My favourite part of this module was learning to use loops and if statements to create those smaller games, and even incorporating characters into them. The challenges and projects were always a new game you could create and play afterwards.
-
 <a href="https://www.khanacademy.org/computer-programming/spin-off-of-project-memory/6468164162895872">Visit my Memory Game project!</a>
-
 <img id="Matching" src="https://www.khanacademy.org/computer-programming/project-memory/6369047752998912/5649050225344512.png">
 
 
 
 ## 4. Advanced JS:Natural Simulations ##
 I will continue to use this module as it is very commonly used in advanced games. All proper high budget games incorporate real life mechanics, such as physics. This module helped me learn to create advanced natural scenarios and reflect them onto a canvas. It taught me to create rainfall and motions such as bounce. In terms of final product, this module was not the best result, but it's purpose was the final goal. It taught me to take games to that next level and replicate functions in our universe and how to incorporate them. My favourite part of this module was learning to use older and new variables to update the position of every object and the random function to randomize their movement. 
-
 <a href="https://www.khanacademy.org/computer-programming/spin-off-of-project-creature-colonies/5214854252544000">Visit my Natural Simulations project!</a>
 
 <img id="Khan" src="https://pbs.twimg.com/profile_images/1122934185570852865/leT97MR8.png">
@@ -99,4 +96,4 @@ I will continue to use this module as it is taught me how to keep my online info
 
 
 ## 10. Algorithms Exploration ##
-The final module I have to offer for today is the Algorithms exploration module. This module was essentially consistently soling a Rubik's cube. I enjoyed this module because it was something original that I haden't seen in other courses. This was something new and it was very fun. Playing around with the cube and trying to solve it was one of the highlights of the course.
+The final module I have to offer for today is the Algorithms exploration module. This module was essentially consistently soling a Rubik's cube. I enjoyed this module because it was something original that I haden't seen in other courses. This was something new and it was very fun. Playing around with the cube and trying to solve it was one of the highlights of the course. I will continue to use this module as it is an interesting concept and cubing is very fascinating mathematically. This module gave me the opportunity to use something that's glanced over by the education system. It taught me what an asset these puzzles are, and howeffeective they are at getting you to analyze and breadown the cube.
